@@ -261,16 +261,6 @@
     });
   }
 
-  /* ---------- Download CV Placeholder ---------- */
-  function initDownloadCV() {
-    if (!downloadBtn) return;
-
-    downloadBtn.addEventListener('click', function (e) {
-      e.preventDefault();
-      alert('CV download will be available soon! Add your PDF to assets/ and link it here.');
-    });
-  }
-
   /* ---------- Initialize Everything ---------- */
   function init() {
     typeEffect();
@@ -279,7 +269,6 @@
     initSkillBars();
     initMobileNav();
     initSmoothScroll();
-    initDownloadCV();
 
     window.addEventListener('scroll', function () {
       handleNavbarScroll();
